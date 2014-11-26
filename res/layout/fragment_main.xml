@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/graygradient"
+    >
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/pantallazo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:scaleType="fitXY"
+            android:text="Usuario"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="text"
+            android:scaleType="fitXY" >
+            
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:text="Contraseña"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:scaleType="fitXY" >
+
+            
+        </EditText>
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/recuerdame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuerdame" />
+
+
+        <ImageView
+            android:id="@+id/TxFacebook"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:onClick="loginFacebook"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/TxTwitter" 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/TxGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/google" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/btnlogin" />
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="No tienes una cuenta en CrashAlert?" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Resgitrate ahora y salva tu vida con un solo click" />
+
+    <ImageView
+        android:id="@+id/btn_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registrarse"
+        style="?android:buttonBarButtonStyle"
+        android:src="@drawable/btnregister" />
+
+</TableLayout>

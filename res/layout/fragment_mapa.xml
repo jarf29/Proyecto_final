@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/graygradient"
+    tools:context="com.example.googlemaps.MFragment" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:text="Usuario: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="---"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:scaleType="fitXY" >
+            </TextView>
+
+        <TextView
+            android:id="@+id/tvhora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/btnsalir"
+            android:onClick="exit"
+            style="?android:buttonBarButtonStyle"
+            android:text="Logout" />
+       
+    </LinearLayout>
+
+    
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_above="@+id/botones1"
+        android:layout_weight="0.45"
+        class="com.google.android.gms.maps.MapFragment" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/comentariof"
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:visibility="invisible" >
+
+         <EditText
+             android:id="@+id/nivelG"
+             android:layout_width="match_parent"
+            android:layout_height="4dp"/>
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/botones1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_reportes_sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="repsem"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/btnreportesemanal" />
+
+        <ImageView
+            android:id="@+id/btn_reportes_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="repmen"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/btnreportemensual" />
+       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/botones2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_reportar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Reportar_Incidencia"
+            android:src="@drawable/btnreportar"
+            style="?android:buttonBarButtonStyle"
+            android:text="Reportar" />
+
+        <ImageView
+            android:id="@+id/btn_reportes_anu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="repanu"
+            style="?android:buttonBarButtonStyle"
+            android:src="@drawable/btnreporteanual" />
+       
+    </LinearLayout>
+</TableLayout>

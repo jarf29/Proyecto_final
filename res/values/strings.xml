@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrashAlert</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">394702417353824</string>
+    
+    
+    <string name="struser">Usuario</string>
+    <string name="strpass">Contraseña</string>
+    <string name="strfacebook">Ingresar con Facebook</string>
+    <string name="srcacceptbutton">Aceptar</string>
+    
+    <string name="strSuccess">Correcto</string>
+    <string name="strfail">Fallo</string>
+    
+    <string name="view01">Variables</string>
+    <string name="view_gps01">GPS Data</string> 
+    <string name="view_gps02">Address from GPS</string> 
+    <string name="sat">Satelites:</string>
+    <string name="alt">Altitud:</string>
+    <string name="prec">Precision:</string>
+    <string name="vel">Speed:</string>
+    <string name="wmetros">Metros:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="localidad">Localidad:</string>
+    <string name="provincia">State:</string>
+    <string name="pais">Countrie:</string>
+    <string name="cp">CP:</string> 
+    
+    
+</resources>
